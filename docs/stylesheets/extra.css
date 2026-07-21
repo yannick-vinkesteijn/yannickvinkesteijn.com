@@ -1,0 +1,295 @@
+/* ── Brand colors ─────────────────────────────────────── */
+:root {
+  --yv-gold:    #f1c90e;
+  --yv-slate:   #2a3039;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #f1c90e;
+  --md-primary-fg-color--light: #f5d849;
+  --md-primary-fg-color--dark:  #c9a80a;
+  --md-accent-fg-color:         #f1c90e;
+  --md-typeset-a-color:         #f1c90e;
+  --yv-bg:       #1e2229;
+  --yv-card-bg:  #252b34;
+  --yv-border:   #353d4a;
+  --yv-text:     #e8eaed;
+  --yv-muted:    #9aa0ab;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #2a3039;
+  --md-primary-fg-color--light: #3a424e;
+  --md-primary-fg-color--dark:  #1e232a;
+  --md-accent-fg-color:         #f1c90e;
+  --yv-bg:      #f0f2f5;
+  --yv-card-bg: #ffffff;
+  --yv-border:  #dde1e7;
+  --yv-text:    #1e2229;
+  --yv-muted:   #5c6370;
+}
+
+/* ── Reset page chrome on homepage ────────────────────── */
+.md-content__inner {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+.md-content__inner > h1:first-child {
+  display: none;
+}
+
+/* ── Hero ─────────────────────────────────────────────── */
+.yv-hero {
+  background: linear-gradient(140deg, #1a1d23 0%, #2a3039 100%);
+  padding: 4.5rem 1.5rem 3.5rem;
+}
+
+[data-md-color-scheme="default"] .yv-hero {
+  background: linear-gradient(140deg, #2a3039 0%, #1a1d23 100%);
+}
+
+.yv-hero__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.yv-hero__text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.yv-hero__name {
+  font-size: 2.8rem !important;
+  font-weight: 700 !important;
+  color: #f1c90e !important;
+  margin: 0 0 1.2rem !important;
+  line-height: 1.15 !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.yv-hero__tagline {
+  font-size: 1.1rem;
+  color: #c8cdd6;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.yv-hero__tagline strong {
+  color: #f1c90e;
+  font-weight: 600;
+}
+
+.yv-hero__photo {
+  width: 190px;
+  height: 190px;
+  border-radius: 100%;
+  border: 3px solid #f1c90e;
+  flex-shrink: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+/* ── Projects section ─────────────────────────────────── */
+.yv-projects {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+.yv-section-title {
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: var(--yv-muted) !important;
+  margin: 0 0 1.5rem !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.yv-project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  justify-items: center;
+}
+
+/* ── Project card ─────────────────────────────────────── */
+.yv-project-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--yv-card-bg);
+  border: 1px solid var(--yv-border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-decoration: none !important;
+  color: var(--yv-text) !important;
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.yv-project-card:hover {
+  border-color: #f1c90e;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(241, 201, 14, 0.1);
+  text-decoration: none !important;
+}
+
+.yv-project-card__logo {
+  background: #ffffff;
+  border-radius: 8px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  margin-bottom: 1rem;
+}
+
+.yv-project-card__logo img {
+  max-height: 44px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/*.yv-project-card__logo--nyctea {
+  background: #2a3039;
+}*/
+
+.yv-project-card h3 {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: var(--yv-text) !important;
+  margin: 0 0 0.5rem !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.yv-project-card:hover h3 {
+  color: #f1c90e !important;
+}
+
+.yv-project-card p {
+  font-size: 0.85rem;
+  color: var(--yv-muted);
+  line-height: 1.65;
+  margin: 0;
+  flex: 1;
+}
+
+/* ── Bigger nav logo ──────────────────────────────────── */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.2rem;
+}
+
+/* ── Tags line ────────────────────────────────────────── */
+.yv-hero__tags {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--yv-muted);
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+/* ── Bio ──────────────────────────────────────────────── */
+.yv-hero__bio {
+  font-size: 0.92rem;
+  color: #9aa0ab;
+  line-height: 1.75;
+  margin: 0.8rem 0 1.2rem;
+  max-width: 520px;
+}
+
+/* ── Social icons ─────────────────────────────────────── */
+.yv-social {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.yv-social a {
+  color: var(--yv-muted);
+  display: flex;
+  align-items: center;
+  transition: color 0.15s ease;
+  text-decoration: none !important;
+}
+
+.yv-social a:hover {
+  color: #f1c90e;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 860px) {
+  .yv-project-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .yv-hero__name { font-size: 2rem !important; }
+  .yv-hero__photo img { width: 120px; height: 120px; }
+}
+
+@media (max-width: 420px) {
+  .yv-project-grid { grid-template-columns: 1fr; }
+  .yv-hero__inner { flex-direction: column-reverse; align-items: flex-start; }
+}
+
+/* ── Blog list ────────────────────────────────────────── */
+.yv-post-list {
+  list-style: none !important;
+  margin: 2rem 0 0 !important;
+  padding: 0 !important;
+}
+
+.yv-post {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--yv-border);
+}
+
+.yv-post:last-child {
+  border-bottom: 1px solid var(--yv-border);
+}
+
+.yv-post__date {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--yv-muted);
+}
+
+.yv-post__title {
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  margin: 0.35rem 0 0.6rem !important;
+  border: none !important;
+  padding: 0 !important;
+  line-height: 1.25 !important;
+}
+
+.yv-post__title a {
+  color: var(--yv-text) !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease;
+}
+
+.yv-post__title a:hover {
+  color: var(--md-accent-fg-color) !important;
+}
+
+.yv-post__excerpt {
+  color: var(--yv-muted);
+  line-height: 1.7;
+  margin: 0;
+}

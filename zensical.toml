@@ -1,0 +1,36 @@
+[project]
+site_name = "Yannick Vinkesteijn"
+site_url = "https://yannickvinkesteijn.com"
+site_description = "Software engineer at the intersection of data engineering and open-source tools that make the world a better place."
+site_author = "Yannick Vinkesteijn"
+extra_css = ["stylesheets/extra.css"]
+nav = [
+  {"Home" = "index.md"},
+  {"Blog" = "blog/index.md"},
+]
+
+[project.theme]
+variant = "modern"
+custom_dir = "overrides"
+logo = "images/logo.png"
+favicon = "images/logo.png"
+
+[project.theme.font]
+text = "Inter"
+code = "JetBrains Mono"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+
+[project.theme.palette.toggle]
+icon = "lucide/sun"
+name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+
+[project.theme.palette.toggle]
+icon = "lucide/moon"
+name = "Switch to light mode"
