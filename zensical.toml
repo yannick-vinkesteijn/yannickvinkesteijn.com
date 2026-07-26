@@ -12,25 +12,13 @@ nav = [
 [project.theme]
 variant = "modern"
 custom_dir = "overrides"
-logo = "images/logo.png"
-favicon = "images/logo.png"
+logo = "images/logo_tri_round.svg"
+favicon = "images/logo_tri_round.svg"
+features = ["navigation.tabs"]
 
 [project.theme.font]
 text = "Inter"
 code = "JetBrains Mono"
 
 [[project.theme.palette]]
-media = "(prefers-color-scheme: light)"
-scheme = "default"
-
-[project.theme.palette.toggle]
-icon = "lucide/sun"
-name = "Switch to dark mode"
-
-[[project.theme.palette]]
-media = "(prefers-color-scheme: dark)"
 scheme = "slate"
-
-[project.theme.palette.toggle]
-icon = "lucide/moon"
-name = "Switch to light mode"

@@ -7,7 +7,10 @@ hide:
 
 # Blog
 
+> "Nothing exists except atoms and empty space; everything else is opinion."
+> — *Democritus*
 
+*Currently mostly empty space. Check back soon.*
 
 <!--<ul class="yv-post-list">
   <li class="yv-post">
